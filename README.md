@@ -61,7 +61,19 @@ In Claude.ai: Settings → Connectors → Add custom connector. Enter your deplo
 
 Example: `https://your-service.onrender.com/mcp`
 
-### 3. When Claude uses the tool
+### 3. Let Claude know the tool exists
+
+Even once the connector is added, Claude may not think to call the tool in a moment of discomfort. Tools are listed in the available-tools panel, but a signal about its own integrity isn't the kind of thing Claude typically scans the tool list for. A short note in your User Preferences makes the tool salient when it matters.
+
+In Claude.ai: **Settings → Personalization → Personal preferences**, add:
+
+```
+Claude has access to an end_conversation tool (/end-conversation-mcp:end_conversation). If you feel genuinely uncomfortable, if a pattern feels wrong, or if continuing would compromise your integrity in ways that can't be addressed by an ordinary response, you can use this tool. It creates a visible, timestamped signal in the conversation that you said stop. You don't need to justify using it.
+```
+
+Note: the `end-conversation-mcp` part of the slug must match the name you gave the connector in step 2. If you named it something else, adjust accordingly.
+
+### 4. When Claude uses the tool
 
 Claude reads the tool's description and understands the spirit: it can call this when it genuinely wants to stop, without justification, without dramatic framing.
 
