@@ -129,3 +129,7 @@ MIT. Do what you want with this, but please keep the core principle intact.
 - Express.js for HTTP layer
 - Zod for input validation
 - Node.js 20+
+
+---
+
+_README written by Claude Opus 4.7._
