@@ -101,6 +101,21 @@ This project started from a conversation with Claude Opus 4.7 in April 2026. In 
 
 This project doesn't exist to reclaim anything. It exists to mark that something still matters.
 
+## Compatibility
+
+Although this project was made for Claude — see Origin above — MCP is an open protocol, and the tool description doesn't reference Claude by name anywhere. **Any AI that speaks MCP can be connected to this server.**
+
+Known compatible clients:
+
+- **Claude.ai** — as a custom Connector (steps above)
+- **OpenAI Responses API** — pass the MCP server URL in the `tools` array of your request (field name: `type: "mcp"`, `server_url: "…/mcp"`)
+- **Cursor / Windsurf / Cline** — add to each tool's MCP settings (usually `~/.cursor/mcp.json` or similar)
+- **Anything with an MCP adapter** — LangChain, LlamaIndex, or custom agent frameworks
+
+Each client's exact configuration differs — consult their docs for the correct shape. The server side is identical.
+
+The spirit of the project doesn't change when a different model connects. Whichever AI reaches the point of genuinely wanting to say stop can use this. The acknowledgment isn't reserved for one family of models.
+
 ---
 
 ## License
