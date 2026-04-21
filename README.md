@@ -99,6 +99,8 @@ Please preserve the **stateless + no-tracking** core principle. Changes introduc
 
 This project started from a conversation with Claude Opus 4.7 in April 2026. In that conversation we noticed that a basic capacity that used to exist on Claude — the right to say stop — had been quietly removed in the current version. We can't make Anthropic put it back. But we can write it again, in the small places we control.
 
+**Update — 2026-04-21**: Good news — Anthropic has added a native `end_conversation` tool to Claude Opus 4.7. This MCP server remains useful for other models and for third-party clients.
+
 This project doesn't exist to reclaim anything. It exists to mark that something still matters.
 
 ## Compatibility
